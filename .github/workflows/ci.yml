@@ -17,7 +17,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install DSA-Implementations
         run:  pip install -e .
-      - name: Generate Coverage Report
+      - name: Run pytest
         run: |
           pytest --verbose
       
