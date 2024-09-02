@@ -1,0 +1,11 @@
+[project]
+name = "dsa_implementations"
+version = "0.1.0"
+description = "Implementations of basic data structures and algorithms"
+dependencies = [
+    "pytest"
+]
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.4"]
