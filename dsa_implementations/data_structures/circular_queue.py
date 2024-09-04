@@ -1,5 +1,7 @@
 class CircularQueue:
     def __init__(self, capacity):
+        if capacity < 1:
+            raise ValueError("Capacity must be greater than 0")
         self.capacity = capacity
         self.array = [None for _ in range(capacity)]
         # rear points to the last inserted element.
