@@ -7,14 +7,14 @@ def stack():
     return Stack()
 
 
-def test_basic_push(stack):
+def test_push(stack):
     stack.push(5)
     assert stack.top() == 5
     stack.push(-1)
     assert stack.top() == -1
 
 
-def test_basic_pop(stack):
+def test_pop(stack):
     stack.push(5)
     stack.push(2)
     assert stack.pop() == 2
