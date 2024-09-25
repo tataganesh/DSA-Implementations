@@ -33,7 +33,9 @@ def tree_min_iterative(root: Node) -> int:
 def tree_min_recursive(root: Optional[Node]) -> int:
     if not root:
         return sys.maxsize
-    return min(tree_min_recursive(root.left), tree_min_recursive(root.right), root.val)
+    left_min = tree_min_recursive(root.left)
+    right_min = tree_min_recursive(root.right)
+    return min(left_min, right_min, root.val)
 
 
 def test_implementation(tree_min_funtion, test_cases):
